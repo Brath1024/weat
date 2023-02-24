@@ -1,0 +1,59 @@
+name: weat
+description: weat
+
+publish_to: 'none'
+
+version: 1.0.0
+ 
+environment: 
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter 
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  #网络请求
+  dio: ^4.0.6
+  #getx 
+  get: ^4.6.5
+  #透明弹出框
+  fluttertoast: ^8.0.8
+  #屏幕适配
+  flutter_screenutil: ^5.5.3+2
+  #全局状态管理
+  provider: ^6.0.1
+  #轮播图
+  flutter_swiper_plus: ^2.0.4
+  # GET WIDGET UI库
+  getwidget: ^2.0.5
+  #图片缓存
+  cached_network_image: ^3.2.0
+  #图片放大缩小
+  photo_view: ^0.13.0
+  #权限申请
+  permission_handler: ^9.2.0
+  #贝壳组件库
+  bruno: ^2.2.0
+  #easyloading
+  flutter_easyloading: ^3.0.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter 
+  flutter_lints: ^1.0.0
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: puhui
+      fonts:
+        - asset: fonts/Alibaba_PuHuiTi_2.0_55_Regular_85_Bold.ttf   
+    - family: jinbu
+      fonts:
+        - asset: fonts/DingTalk_JinBuTi_Regular.ttf
+
+flutter_intl:
+  enabled: true

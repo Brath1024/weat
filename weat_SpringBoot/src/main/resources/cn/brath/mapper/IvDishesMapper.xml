@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.brath.mapper.IvDishesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="DishesMap" type="cn.brath.entity.IvDishes">
+        <id column="id" property="id"/>
+        <result column="dishes_name" property="dishesName"/>
+        <result column="dishes_step" property="dishesStep"/>
+        <result column="dishes_url" property="dishesUrl"/>
+    </resultMap>
+    <select id="getDishes" resultType="cn.brath.entity.IvDishes">
+        select d.*
+        from iv_dishes d
+        ORDER BY RAND()
+    </select>
+
+</mapper>
